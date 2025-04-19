@@ -1,20 +1,21 @@
-.common{
+.common {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
+.header {
     height: 100px;
     background-color: rgb(231, 225, 229);
     color: white;
     line-height: 100px;
 }
 
-.mainbody{
+.mainbody {
     background-color: whitesmoke;
+    padding: 20px;
 }
 
-.footer{
+.footer {
     background-color: rgb(231, 225, 229);
     color: white;
     position: fixed;
@@ -25,21 +26,21 @@
     padding-top: 15px;
 }
 
-img{
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
 }
 
-nav{
+nav {
     background-color: lightgray;
     padding: 10px;
     overflow: hidden;
     text-align: center;
 }
 
-nav a{
+nav a {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
@@ -48,7 +49,7 @@ nav a{
     display: inline-block;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #ccc;
 }
 
@@ -56,15 +57,19 @@ h1, h2 {
     color: black;
 }
 
+/* Fix for list center and proper nesting */
 .list-center {
     display: flex;
     justify-content: center;
     text-align: left;
 }
 
-.list-center ol, .list-center ul {
-    display: inline-block;
-    text-align: left;
-    margin: 0 auto;
+.list-center ol {
+    padding-left: 30px;
+}
+
+.list-center ol li ul {
+    list-style-type: disc;
     padding-left: 20px;
+    margin-top: 5px;
 }
